@@ -1,6 +1,13 @@
 /* intuitivnejší box model */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
 
 body {
 	font: 16px/1.5 sans-serif;
@@ -8,3 +15,31 @@ body {
 
 /* ------------------------------------------------ */
 
+.contacts {
+	display: flex;
+	gap: 10px;
+	background-color: rgb(218, 235, 254);
+	flex-wrap: wrap;
+}
+
+.card {
+	height: fit-content;
+	flex: 1 1 calc(100%/3 - 30px);
+	padding: 15px;
+
+	
+}
+
+.card__img{
+	border: 1px solid blue;
+}
+
+.card__img img{
+	width: 100%;
+	height: auto;
+}
+
+.card--active{
+	background-color: rgb(60, 167, 234);
+	color: white;
+}

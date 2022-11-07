@@ -1,0 +1,61 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.header {
+  border: 5px solid #922700;
+}
+.header__link {
+  background-color: #922700;
+  color: white;
+  padding: 15px;
+  display: block;
+  list-style: none;
+}
+.header__link:hover {
+  background-color: blue;
+}
+.header__title {
+  color: #922700;
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 30px;
+}
+
+button {
+  background-color: #922700;
+  color: white;
+  font-family: Georgia, serif;
+  padding: 15px;
+}
+
+a {
+  color: orange;
+}
+a:hover, a:focus {
+  background-color: orange;
+  color: white;
+}
+a:visited {
+  color: gray;
+}
+a:active {
+  color: blue;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+@media (min-width: 700px) {
+  footer {
+    background-color: #922700;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    background-color: darkgreen;
+  }
+}/*# sourceMappingURL=style.css.map */

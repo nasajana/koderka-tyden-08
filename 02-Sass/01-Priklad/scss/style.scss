@@ -1,0 +1,81 @@
+$primary: #922700;
+$danger: #ff0000;
+$success: #00bb88;
+$info: #00aaff;
+
+$font-base: 'Helvetica Neue', Helvetica, Arial;
+$font-special: Georgia, serif;
+
+$spacer: 30px;
+
+body{
+    font-family: $font-base;
+}
+
+.header {
+    border: 5px solid $primary;
+
+    &__link {
+        background-color: $primary;
+        color: white;
+        padding: $spacer / 2;
+        display: block;
+        list-style: none;
+
+        &:hover{
+            background-color: blue;
+        }
+    }
+    &__title {
+        color: $primary;
+        font-family: $font-special;
+        margin: 0;
+        padding: $spacer;
+        
+    }
+}
+// tento koment se nepřenáší do css
+
+button{
+    background-color: $primary;
+    color: white;
+    font-family: $font-special;
+    padding: $spacer / 2;
+}
+
+a {
+    color: orange;
+    
+    &:hover,
+    &:focus{
+        background-color: orange;
+        color: white;
+    }
+    &:visited{
+        color: gray;
+    }
+
+    &:active{
+        color: blue;
+    }
+
+}
+
+// sass mi počítá předem, pak dává do css, proto nelze použít procenta, on neví, kolik procent to bude. 
+// procenta umí pouze css, ten si je spočítá přímo v prohlížeči, ale zdržuje to.
+
+footer{
+    margin-top: $spacer;
+    padding: $spacer/2;
+    background-color: black;
+    color: white;
+    
+    @media (min-width: 700px){
+        background-color: #922700;
+    }
+
+    @media (min-width: 1200px){
+        background-color: darkgreen;
+    }
+}
+
